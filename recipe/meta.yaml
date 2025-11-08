@@ -1,4 +1,4 @@
-{% set version = '3.2.0' %}
+{% set version = "3.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/scCustomize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/scCustomize/scCustomize_{{ version }}.tar.gz
-  sha256: 8485d97499b99d63dc39c18c182a522851b15a959169a85fd25b96517b38b791
+  sha256: f65c423221ee57f6f6c46ad7d557dc98e51d5892f955fdef335d845fc28d089c
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -98,13 +98,8 @@ about:
   home: https://samuel-marsh.github.io/scCustomize/
   dev_url: https://github.com/samuel-marsh/scCustomize
   license: GPL-3.0-or-later
-  summary: 'Collection of functions created and/or curated to aid in the visualization and analysis
-    of single-cell data using ''R''.  ''scCustomize'' aims to provide 1) Customized
-    visualizations for aid in ease of use and to create more aesthetic and functional
-    visuals. 2) Improve speed/reproducibility of common tasks/pieces of code in scRNA-seq
-    analysis with a single or group of functions.  For citation please use: Marsh SE
-    (2021) "Custom Visualizations & Functions for Streamlined Analyses of Single Cell
-    Sequencing" <doi:10.5281/zenodo.5706430> RRID:SCR_024675.'
+  summary: 'Collection of functions created and/or curated to aid in the visualization and analysis of single-cell data using ''R''.  ''scCustomize'' aims to provide 1) Customized visualizations for aid in ease of use and to create more aesthetic and functional visuals. 2) Improve speed/reproducibility of common tasks/pieces
+    of code in scRNA-seq analysis with a single or group of functions.  For citation please use: Marsh SE (2021) "Custom Visualizations & Functions for Streamlined Analyses of Single Cell Sequencing" <doi:10.5281/zenodo.5706430> RRID:SCR_024675.'
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
