@@ -1,4 +1,4 @@
-{% set version = "3.2.1" %}
+{% set version = "3.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/scCustomize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/scCustomize/scCustomize_{{ version }}.tar.gz
-  sha256: f65c423221ee57f6f6c46ad7d557dc98e51d5892f955fdef335d845fc28d089c
+  sha256: b64ea108f74bb9335eced8c06baf51b6d3493244814095e366dbbffa4814f2f4
 
 build:
   number: 0
