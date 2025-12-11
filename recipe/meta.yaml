@@ -46,6 +46,7 @@ requirements:
     - r-janitor
     - r-lifecycle
     - r-magrittr
+    - r-mcprogress
     - r-paletteer
     - r-patchwork
     - r-pbapply
@@ -77,6 +78,7 @@ requirements:
     - r-janitor
     - r-lifecycle
     - r-magrittr
+    - r-mcprogress
     - r-paletteer
     - r-patchwork
     - r-pbapply
