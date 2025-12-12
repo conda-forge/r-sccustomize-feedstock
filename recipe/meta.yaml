@@ -1,4 +1,4 @@
-{% set version = "3.2.2" %}
+{% set version = "3.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/scCustomize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/scCustomize/scCustomize_{{ version }}.tar.gz
-  sha256: b64ea108f74bb9335eced8c06baf51b6d3493244814095e366dbbffa4814f2f4
+  sha256: f142c5637101eaa24495dced60aba970b283b3427b64f96983215422ba010dea
 
 build:
   number: 0
@@ -46,6 +46,7 @@ requirements:
     - r-janitor
     - r-lifecycle
     - r-magrittr
+    - r-mcprogress
     - r-paletteer
     - r-patchwork
     - r-pbapply
@@ -77,6 +78,7 @@ requirements:
     - r-janitor
     - r-lifecycle
     - r-magrittr
+    - r-mcprogress
     - r-paletteer
     - r-patchwork
     - r-pbapply
